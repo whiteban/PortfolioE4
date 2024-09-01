@@ -626,7 +626,13 @@ span {
     flex-direction: column; /* Empile les éléments */
     align-items: flex-start; /* Aligne les éléments à gauche */
   }
+  .navbar {
+    display: none; /* Cache les éléments de la barre de navigation principale */
+  }
 
+  .menu-icon {
+    display: flex; /* Affiche l'icône du menu burger */
+  }
   .navbar a {
     font-size: 1.6rem;
     margin-left: 0; /* Retire les marges entre les éléments du menu */
