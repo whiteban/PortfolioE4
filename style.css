@@ -209,15 +209,15 @@ span {
 .text-animation {
   font-size: 34px;
   font-weight: 600;
-  min-width: 280px;
-  position: relative;
+  display: inline; /* Pour rester sur la même ligne que le texte statique */
+  line-height: 1; /* Assurez-vous que la hauteur de ligne est cohérente */
 }
 
 .text-animation span {
   display: inline-block;
   position: relative;
-  overflow: hidden;
-  white-space: nowrap;
+  vertical-align: baseline; /* Peut être ajusté à baseline, middle, etc. */
+  line-height: 1; /* Assure une cohérence dans l'alignement */
 }
 
 .text-animation span::after {
@@ -228,6 +228,7 @@ span {
   height: 100%;
   right: 0;
   animation: cursor-blink 0.6s infinite;
+  vertical-align: middle; /* Ajuste le curseur pour l'aligner avec le texte */
 }
 
 @keyframes cursor-blink {
@@ -401,34 +402,37 @@ span {
     left: calc(50% - 12px);
   }
 }
-/* Ajout des styles pour les nouvelles sections et sous-options */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
 .submenu {
   display: none;
   position: absolute;
-  background: var(--second-bg-color);
-  border-radius: 5px;
-  box-shadow: 0 0 15px var(--main-color);
-  top: 100%;
-  left: 0;
-  width: 200px;
-}
-
-.navbar a:hover + .submenu,
-.submenu:hover {
-  display: block;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  z-index: 1;
 }
 
 .submenu a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
-  padding: 10px;
-  color: var(--text-color);
-  transition: 0.3s ease;
 }
 
 .submenu a:hover {
-  background: var(--main-color);
-  color: black;
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.dropdown:hover a.active {
+  background-color: #000000;
 }
 
 .rectorat {
