@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #131313;
+  --text-color: white;
+  --main-color: #00ffee;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 12% 4rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo span {
+  text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+navbar a.active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--main-color);
+  display: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 12% 10rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15 rem;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.logo span {
+  color: var(--main-color);
+}
+
+.home-content h3 {
+  margin-bottom: 2rem;
+  margin-top: 0;
+  font-size: 3.5rem;
+}
+
+.home-content h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.home-img {
+  border-radius: 50%;
+}
+
+.home-img img {
+  position: relative;
+  top: 3rem;
+  width: 32 vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.home-img img:hover {
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 1000px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: var(--text-color);
+  transform: scale(1.3) translateY(-5px);
+  box-shadow: 0 0 25px var(--main-color);
+  background-color: var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: black;
+  border: 2px solid transparent;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px var(--main-color);
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btn-group a:nth-of-type(2) {
+  background-color: black;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 25px transparent;
+}
+
+.btn-group a:nthof-type(2):hover {
+  background-color: var(--main-color);
+  color: black;
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.text-animation {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  position: relative;
+}
+
+.text-animation span {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-animation span::after {
+  content: "";
+  background-color: var(--bg-color);
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  right: 0;
+  animation: cursor-blink 0.6s infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
+@keyframes cursor-blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "Frontend Developer";
+  }
+  21%,
+  40% {
+    content: "Web Designer";
+  }
+  41%,
+  60% {
+    content: "UI/UX Designer";
+  }
+  61%,
+  80% {
+    content: "Web Developer";
+  }
+  81%,
+  100% {
+    content: "Software Tester";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+.education {
+  position: relative;
+  padding: 50px 0;
+}
+
+.heading {
+  font-size: 3rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: var(--main-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+  background-color: var(--second-bg-color);
+  border-radius: 25px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 20px var(--main-color);
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--main-color);
+  border: 4px solid var(--main-color);
+  top: 20px;
+  right: -12px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -12px;
+  right: auto;
+}
+
+.timeline-date {
+  position: absolute;
+  top: 10px;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+  right: -100px;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+  left: -100px;
+}
+
+.timeline-content h3 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.timeline-content p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .timeline-item .timeline-date {
+    left: -80px;
+    right: auto;
+  }
+  .timeline::after {
+    left: 20px;
+  }
+  .timeline-item::before {
+    left: calc(50% - 12px);
+  }
+}
+/* Ajout des styles pour les nouvelles sections et sous-options */
+
+.submenu {
+  display: none;
+  position: absolute;
+  background: var(--second-bg-color);
+  border-radius: 5px;
+  box-shadow: 0 0 15px var(--main-color);
+  top: 100%;
+  left: 0;
+  width: 200px;
+}
+
+.navbar a:hover + .submenu,
+.submenu:hover {
+  display: block;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+  color: var(--text-color);
+  transition: 0.3s ease;
+}
+
+.submenu a:hover {
+  background: var(--main-color);
+  color: black;
+}
+
+.rectorat {
+  padding: 50px 12%;
+}
+
+.excel-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.summary-block {
+  background: var(--second-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--main-color);
+}
+
+.attestations a {
+  display: block;
+  color: var(--main-color);
+  margin-top: 10px;
+}
+
+.rp-summary,
+.rp-detail {
+  padding: 50px 12%;
+}
+
+.rp-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rp-block {
+  background: var(--second-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--main-color);
+}
+
+.proofs {
+  margin-top: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  background: var(--second-bg-color);
+  color: var(--text-color);
+}
+
+.contact button {
+  padding: 10px 20px;
+  background: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact button:hover {
+  background: black;
+  color: var(--main-color);
+}
+
+.stage {
+  padding: 50px 12%;
+}
+
+.stage .heading {
+  font-size: 3rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stage p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.tech-blocks {
+  display: flex;
+  justify-content: center; /* Centre les blocs horizontalement */
+  align-items: center; /* Centre les blocs verticalement */
+  flex-wrap: wrap; /* Permet aux blocs de passer sur plusieurs lignes si l'espace est limité */
+  min-height: 100vh; /* Assure que le conteneur prend toute la hauteur de la fenêtre */
+  gap: 20px; /* Espacement entre les blocs */
+  padding: 50px 12%; /* Ajuste le padding pour qu'il soit en harmonie avec le reste du site */
+}
+
+.tech-block {
+  background-color: var(--second-bg-color);
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: var(--main-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  box-shadow: 0 0 15px var(--main-color);
+  transition: transform 0.5s ease-in-out;
+}
+
+.tech-block:hover {
+  transform: translateX(15px);
+}
+
+.download-btn {
+  text-align: center;
+}
+
+.download-btn .btn {
+  background-color: var(--main-color);
+  color: black;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 15px var(--main-color);
+  transition: 0.3s ease-in-out;
+}
+
+.download-btn .btn:hover {
+  transform: scale(1.05);
+}
+
+.rectorat .submenu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.news {
+  background-color: var(--bg-color);
+  padding: 5rem 10%;
+}
+
+.news .heading {
+  font-size: 3rem;
+  color: var(--text-color); /* Couleur bleue pour le titre */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.news-block {
+  background-color: var(--second-bg-color);
+  padding: 2rem;
+  border-radius: 20px; /* Coins arrondis pour un effet similaire */
+  box-shadow: 0 0 15px 3px rgba(0, 255, 255, 0.8); /* Lueur bleue autour du bloc */
+}
+
+.news-block h3 {
+  font-size: 2.2rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.news-block p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.news-block p strong {
+  color: var(--main-color);
+}

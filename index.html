@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de Mathieu Monnie" />
+    <title>Responsive Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">Mathieu<span>Monnie</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Accueil</a>
+        <a href="#education" class="active">Formation</a>
+        <a href="#stage" class="active">Stage</a>
+        <a href="#testimonials" class="active">News</a>
+        <a href="#rectorat" class="dropdown">Rectorat</a>
+        <div class="submenu">
+          <a href="#e4">E4</a>
+          <a href="#e5">E5</a>
+          <a href="#rp-summary">Synthèse</a>
+          <a href="#rp-detail">RP</a>
+        </div>
+        <a href="#contact" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Bonjour, je suis <span>Mathieu</span></h1>
+        <h3 class="text-animation">
+          J'aimerais être <span id="changing-text"></span>
+        </h3>
+        <p>
+          Au cours de mon cursus, j'ai acquis des compétences en développement
+          logiciel, j’étudie actuellement SQL (Structured Query Language), C# ,
+          Python, HTML (Hypertext Markup Language),<br />
+          CSS (Cascading Style Sheets), PHP(Hypertext Preprocessor), REACT,
+          JavaScript, Symfony
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+        <div class="btn-group">
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="1.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="heading">Formation</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023-2025</div>
+          <div class="timeline-content">
+            <h3>
+              BTS SIO (Services informatiques aux organisations) <br />Au lycée
+              la chataigneraie, Mesnil Esnard
+            </h3>
+            <p>
+              Durant mon BTS SIO, j'ai choisie l'option SLAM (Solutions
+              Logicielles et Applications Métiers)
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2022-2023</div>
+          <div class="timeline-content">
+            <h3>
+              Baccalauréat STI2D<br />Au lycée la chataigneraie, Mesnil Esnard
+            </h3>
+            <p>
+              Lors de mon année de Terminale j'ai passé mon Bac STI2D OPTION
+              ITEC (Innovation Technologique et Éco-Conception) je l'ai obtenue
+              avec une moyenne de 11.79
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021-2022</div>
+          <div class="timeline-content">
+            <h3>
+              Baccalauréat de Français<br />Au lycée la chataigneraie, Mesnil
+              Esnard
+            </h3>
+            <p>
+              Durant de mon année de première j'ai eu mon Bac de Français avec
+              une moyenne de 12.5
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stage" id="stage">
+      <h2 class="heading">Stage chez ABECEDAIRE</h2>
+      <p>
+        Durant ma 1ère année de BTS SIO, j'ai effectué un stage d'un mois chez
+        ABECEDAIRE, du 27 mai au 28 juin 2024, pour découvrir le métier de
+        développeur.
+        <br /><br />
+        ABECEDAIRE est né de la fusion entre un studio graphique et le studio
+        numérique Akarah. L'entreprise, dirigée par Gunther Bunel, a été fondée
+        en 2018 à Rouen. ABECEDAIRE se concentre sur deux domaines : le print,
+        avec la création de logos et la subligraphie, et le digital, spécialisé
+        dans les expériences tactiles pour bornes interactives. Un de leurs
+        partenariats majeurs est avec Toshiba, où ABECEDAIRE gère le software.
+        <br /><br />
+        Akarah a été fondé en 2017 par un groupe d'amis après un startup
+        weekend. Leur premier grand succès fut l'application Ary, qui permet de
+        découvrir Rouen de manière ludique. Ils ont ensuite remporté un projet
+        important pour l'Armada 2019. Cependant, des événements comme l'incendie
+        de Lubrizol et la pandémie de COVID-19 ont forcé Akarah à diversifier
+        ses activités, notamment vers la création de sites web et d'applications
+        mobiles. En 2021, ABECEDAIRE a racheté Akarah, après que leurs
+        fondateurs se soient rencontrés lors d'une conférence en Normandie.
+        <br /><br />
+        Durant mon stage de première année en BTS SIO, j'ai réalisé plusieurs
+        missions chez ABECEDAIRE, dont voici les principales. <br /><br />
+        Tout d'abord, j'ai travaillé sur un projet de web scraping avec la
+        librairie Puppeteer en JavaScript. J'ai scrappé des articles du site
+        Codeur.com, récupéré les IDs et résumés des articles, et les ai affichés
+        dans un tableau. Ce projet m'a permis de me familiariser avec JavaScript
+        et de comprendre le scraping web. <br /><br />
+        Ensuite, j'ai développé mon portfolio en HTML et CSS à partir d'une
+        maquette Figma. Ce projet m'a permis d'apprendre Flexbox pour la mise en
+        page flexible et de créer un portfolio responsive, adapté à tous les
+        types d'écrans. Le code est disponible sur mon GitHub. <br /><br />
+        Pour finaliser ce projet, j'ai effectué le déploiement du portfolio sur
+        Netlify, rendant le portfolio accessible en ligne et démontrant ma
+        capacité à créer des interfaces utilisateur adaptatives. <br /><br />
+        J'ai également appris à développer une API en NodeJS avec Express, où
+        j'ai compris les verbes HTTP, les erreurs courantes, et créé une API
+        REST. Ce projet m'a permis de maîtriser les fondamentaux pour créer des
+        applications web interactives et robustes. <br /><br />
+        Dans un autre projet, j'ai réalisé la traduction d'un site internet
+        d'anglais en français pour ABECEDAIRE, permettant aux utilisateurs
+        francophones d'accéder aux services sans barrière linguistique.
+        <br /><br />
+        Enfin, pour ma dernière tâche, j'ai choisi de concevoir une maquette
+        Figma pour un site de recettes de cuisine que je développerai
+        prochainement. Cela m'a permis de me plonger dans toutes les étapes du
+        développement web, du choix de la technologie à la création du design
+        final. <br /><br />
+      </p>
+      <div class="download-btn">
+        <a href="MMO_RapportDeStageMathieuFinal3.docx" class="btn"
+          >Télécharger le rapport de stage</a
+        >
+      </div>
+      <div class="attestations">
+        <h3>Attestations</h3>
+        <div class="attestation-block">
+          <h4>Attestation 1ère année</h4>
+          <a href="AttestationDeStageABECEDAIRE.pdf">Voir le document</a>
+        </div>
+        <div class="attestation-block">
+          <h4>Attestation 2ème année</h4>
+          <a href="#">Voir le document</a>
+        </div>
+      </div>
+    </section>
+    <section class="news" id="news">
+      <h2 class="heading">News</h2>
+      <div class="news-container">
+        <div class="news-block">
+          <h3>News 1</h3>
+          <p><strong>Titre:</strong> Entrainement des unités d’élites</p>
+          <p><strong>Bornage:</strong> Défense</p>
+          <p><strong>Regex:</strong> Regex du Bloc 1</p>
+        </div>
+
+        <div class="news-block">
+          <h3>News 2</h3>
+          <p><strong>Titre:</strong> Améliorer la santé</p>
+          <p><strong>Bornage:</strong> Santé</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 3</h3>
+          <p>
+            <strong>Titre:</strong> TAlzheimer : la réalité virtuelle vous
+            révèle les premiers signes de la maladie !
+          </p>
+          <p><strong>Bornage:</strong> Santé</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 4</h3>
+          <p>
+            <strong>Titre:</strong> Le projet "TARGET" cible la réalité
+            augmentée pour former les policiers
+          </p>
+          <p><strong>Bornage:</strong> Défense</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 5</h3>
+          <p>
+            <strong>Titre:</strong> Les technologies immersives : quels intérêts
+            pour la Défense?
+          </p>
+          <p><strong>Bornage:</strong> Défense</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 6</h3>
+          <p>
+            <strong>Titre:</strong> La réalité virtuelle aussi efficace que des
+            activités réelles contre la dépression
+          </p>
+          <p><strong>Bornage:</strong> Santé</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 7</h3>
+          <p>
+            <strong>Titre:</strong> révolutionner la rééducation par la réalité
+            virtuelle
+          </p>
+          <p><strong>Bornage:</strong>Santé</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 8</h3>
+          <p>
+            <strong>Titre:</strong> Projet ORCHESTRAA : former le personnel
+            militaire grâce à la réalité virtuelle
+          </p>
+          <p><strong>Bornage:</strong> Défense</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 9</h3>
+          <p>
+            <strong>Titre:</strong> L’armée de Terre expérimente la réalité
+            virtuelle pour préparer ses missions
+          </p>
+          <p><strong>Bornage:</strong> Défense</p>
+          <p><strong>Regex:</strong> Regex du Bloc 1</p>
+        </div>
+
+        <div class="news-block">
+          <h3>News 10</h3>
+          <p>
+            <strong>Titre:</strong> le top des innovations qui changent la vie
+            des seniors
+          </p>
+          <p><strong>Bornage:</strong> Santé</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 11</h3>
+          <p>
+            <strong>Titre:</strong> Département de police de Woodridge utilise
+            la réalité virtuelle pour une formation améliorée
+          </p>
+          <p><strong>Bornage:</strong> Défense</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 12</h3>
+          <p>
+            <strong>Titre:</strong> Pourquoi l'utilisation de casques de réalité
+            virtuelle est tout sauf un gadget à l'hôpital de Brive
+          </p>
+          <p><strong>Bornage:</strong> Santé</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 13</h3>
+          <p>
+            <strong>Titre:</strong> Une nouvelle révolution de la santé
+            numérique
+          </p>
+          <p><strong>Bornage:</strong> Santé</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 14</h3>
+          <p>
+            <strong>Titre:</strong> quand les armées entrent dans le métavers
+          </p>
+          <p><strong>Bornage:</strong> Défense</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 15</h3>
+          <p>
+            <strong>Titre:</strong> La VR, redoutable future arme de guerre ?
+          </p>
+          <p><strong>Bornage:</strong> Défense</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="news-block">
+          <h3>News 16</h3>
+          <p>
+            <strong>Titre:</strong> les bienfaits santé des casques de réalité
+            virtuelle
+          </p>
+          <p><strong>Bornage:</strong> Santé</p>
+          <p><strong>Regex:</strong> Regex du Bloc 2</p>
+        </div>
+        <div class="download-btn">
+          <a href="16 News.docx" class="btn">Télécharger toute les news</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="e4" id="e4">
+      <h2 class="heading">
+        Rectorat <br />
+        E4
+      </h2>
+      <div class="excel-summary">
+        <!-- Bloc 1 -->
+        <div class="summary-block">
+          <h3>F1nfos qui est un site réaliser en AP (en groupe) :</h3>
+        </div>
+        <!-- Bloc 2 -->
+        <div class="summary-block">
+          <h3>Linkedin</h3>
+        </div>
+        <!-- Bloc 3 -->
+        <div class="summary-block">
+          <h3>Cybernews</h3>
+        </div>
+        <div class="summary-block">
+          <h3>AP Travail de groupe GSK</h3>
+        </div>
+        <div class="summary-block">
+          <h3>TP-Ubuntu</h3>
+        </div>
+        <div class="summary-block">
+          <h3>Règle de nommage en C# et SQL</h3>
+        </div>
+        <div class="summary-block">
+          <h3>Projet personnelle MIMO</h3>
+        </div>
+        <h2 class="heading">Réalisation professionnelle</h2>
+        <div class="excel-summary">
+          <!-- Bloc 1 -->
+          <div class="summary-block">
+            <h3>Scraping</h3>
+          </div>
+          <div class="summary-block">
+            <h3>Portfolio</h3>
+          </div>
+          <div class="summary-block">
+            <h3>Déploiement portfolio</h3>
+          </div>
+        </div>
+        <div class="summary-block">
+          <h3>API NodeJS</h3>
+        </div>
+        <div class="summary-block">
+          <h3>Maquette Figma</h3>
+        </div>
+      </div>
+      <!-- Ajoute le lien pour télécharger le fichier Excel -->
+      <a href="MMO_E4_BTS_1SIO_2024.xlsx" class="btn"
+        >Télécharger le tableau Excel</a
+      >
+      <!-- Remplace # par le lien du fichier Excel -->
+      <a href="Descitpion différent projet.docx" class="btn"
+        >Télécharger les Réalisation professionnelle</a
+      >
+    </section>
+
+    <section class="e5" id="e5">
+      <h2 class="heading">E5</h2>
+      <p>A venir : 2 FDRP des projets</p>
+    </section>
+
+    <section class="rp-detail" id="rp-detail">
+      <h2 class="heading">Certification</h2>
+      <h2>
+        ANSSI (Agence Nationale de la Sécurité des Systèmes d’Information) :
+      </h2>
+      <a href="CertificationSecNum.pdf" class="btn"
+        >Télécharger la Certification</a
+      >
+      <h2>RGPD (Règlement Général sur la Protection des Données) :</h2>
+      <a href="certification RGPD.pdf" class="btn"
+        >Télécharger la Certification</a
+      >
+      <h2>Licence PIX :</h2>
+      <a href="Pix.pdf" class="btn">Télécharger la Certification</a>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact</h2>
+      <form
+        action="mailto:mathieu.monnie7@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
