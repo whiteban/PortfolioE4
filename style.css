@@ -424,7 +424,7 @@ span {
 }
 
 .submenu a:hover {
-  background-color: #f1f1f1;
+  background-color: #000000;
 }
 
 .dropdown:hover .submenu {
@@ -614,4 +614,75 @@ span {
 
 .news-block p strong {
   color: var(--main-color);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%; /* Réduction de la taille de la police de base */
+  }
+
+  .header {
+    padding: 2rem 5%;
+    flex-direction: column; /* Empile les éléments */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+  }
+
+  .navbar a {
+    font-size: 1.6rem;
+    margin-left: 0; /* Retire les marges entre les éléments du menu */
+    display: block; /* Fait passer les liens sur des lignes distinctes */
+    margin-bottom: 1rem;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 2rem; /* Réduction de l'espacement */
+    padding: 8rem 5% 8rem; /* Réduction du padding */
+  }
+
+  .home-content h1 {
+    font-size: 5rem; /* Réduction de la taille du texte principal */
+  }
+
+  .home-content h3 {
+    font-size: 2.5rem; /* Réduction de la taille du sous-titre */
+  }
+
+  .home-img img {
+    width: 80vw; /* Ajuste la largeur de l'image pour s'adapter à l'écran */
+    top: 1rem; /* Réduction du décalage par rapport au haut */
+  }
+
+  .btn-group {
+    flex-direction: column; /* Empile les boutons verticalement */
+    gap: 1rem;
+  }
+
+  .education {
+    padding: 30px 5%; /* Réduction du padding */
+  }
+
+  .timeline-item .timeline-date {
+    left: -50px; /* Ajuste la position des dates */
+  }
+
+  .timeline::after {
+    left: 10px; /* Réduit la position de la ligne centrale */
+  }
+
+  .contact form {
+    padding: 20px 5%; /* Réduction du padding dans le formulaire de contact */
+  }
+
+  .tech-blocks {
+    padding: 30px 5%; /* Réduction du padding global */
+  }
+
+  .news {
+    padding: 3rem 5%; /* Réduction du padding */
+  }
+
+  .news-container {
+    grid-template-columns: 1fr; /* Affiche les blocs en une seule colonne */
+  }
 }
