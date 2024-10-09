@@ -1,9 +1,4 @@
-const textArray = [
-  "développeur Full Stack",
-  "développeur 3D",
-  "développeur Web",
-  "développeur Mobile",
-];
+const textArray = ["Le Football", "La voile", "Le judo"];
 let textIndex = 0;
 let charIndex = 0;
 const typingDelay = 100;
