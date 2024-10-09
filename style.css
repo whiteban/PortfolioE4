@@ -692,3 +692,32 @@ span {
     grid-template-columns: 1fr; /* Affiche les blocs en une seule colonne */
   }
 }
+.attestations {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--second-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--main-color);
+}
+
+.attestation-block {
+  margin-bottom: 20px;
+}
+
+.attestation-block h4 {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.attestation-block a {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.attestation-block a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
