@@ -721,3 +721,6 @@ span {
   color: var(--text-color);
   text-decoration: underline;
 }
+p {
+  font-size: 1.7em; /* Augmente la taille du texte */
+}
