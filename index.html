@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio de Mathieu Monnie" />
-    <title>Portfolio website</title>
+    <title>Portfolio - Mathieu Monnie</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -13,13 +13,14 @@
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="logo">Mathieu<span>Monnié</span></a>
+      <a href="#home" class="logo">Mathieu <span>Monnie</span></a>
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Accueil</a>
         <a href="#education" class="active">Formation</a>
+        <a href="#RP" class="active">Réalisations Professionnelles</a>
         <a href="#stage" class="active">Stage</a>
-        <a href="#news" class="active">News</a>
+        <a href="#news" class="active">Actualités</a>
         <div class="dropdown">
           <a href="#rectorat" class="active">Rectorat</a>
           <div class="submenu">
@@ -38,39 +39,35 @@
         <h3 class="text-animation">
           J'aime pratiquer <span id="changing-text"></span>
         </h3>
-        <p style="font-size: 18px; line-height: 1.6">
+        <p style="font-size: 20px; line-height: 1.6">
           Au cours de mon cursus, j'ai acquis des compétences en développement
           logiciel. J’étudie actuellement :
         </p>
-        <ul style="font-size: 18px; line-height: 1.8; margin-bottom: 20px">
-          <li>
-            <strong>Langages de programmation :</strong> C#, Python, JavaScript,
-            PHP, HTML, CSS
-          </li>
+        <ul style="font-size: 20px; line-height: 1.8; margin-bottom: 20px">
+          <li><strong>Langages de programmation :</strong> C#, Python</li>
+          <li><strong>Langages web :</strong> JavaScript, PHP, HTML, CSS</li>
           <li><strong>Frameworks et bibliothèques :</strong> React, Symfony</li>
-          <li><strong>Bases de données :</strong> SQL, MYSQL Transact-SQL</li>
-          <li><strong>Conception de base de donnée :</strong> Merise, UML</li>
-          <li><strong>CMS:</strong> WordPress, WIX</li>
-          <li><strong>Cybersécurité:</strong> ANSSI, RGPD</li>
-          <li>
-            <strong>Outils de gestion de projet :</strong> Scrum, Trello, Notion
-          </li>
+          <li><strong>Bases de données :</strong> SQL, MySQL, SQL Server, Transact-SQL</li>
+          <li><strong>Conception de base de données :</strong> Merise, UML</li>
+          <li><strong>CMS :</strong> WordPress, WIX</li>
+          <li><strong>Cybersécurité :</strong> ANSSI, RGPD</li>
+          <li><strong>Outils de gestion de projet :</strong> Scrum, Trello, Notion</li>
           <li><strong>Gestion de version :</strong> GitHub</li>
         </ul>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/mathieu-monni%C3%A9-7ba7752a3/"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/whiteban"
-            ><i class="bx bxl-github"></i
-          ></a>
+          <a href="https://www.linkedin.com/in/mathieu-monni%C3%A9-7ba7752a3/">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/whiteban">
+            <i class="bx bxl-github"></i>
+          </a>
         </div>
         <div class="btn-group">
           <a href="#contact" class="btn">Contact</a>
         </div>
       </div>
       <div class="home-img">
-        <img src="1.jpg" alt="" />
+        <img src="1.jpg" alt="Photo de Mathieu" />
       </div>
     </section>
 
@@ -81,112 +78,69 @@
           <div class="timeline-date">2023-2025</div>
           <div class="timeline-content">
             <h3>
-              BTS SIO (Services informatiques aux organisations) <br />Au lycée
-              la chataigneraie, Mesnil Esnard
+              BTS SIO (Services informatiques aux organisations)<br />
+              Lycée La Châtaigneraie, Mesnil-Esnard
             </h3>
-            <p>
-              Durant mon BTS SIO, j'ai choisie l'option SLAM (Solutions
-              Logicielles et Applications Métiers)
-            </p>
+            <p>Option SLAM (Solutions Logicielles et Applications Métiers)</p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2024</div>
           <div class="timeline-content">
-            <h3>ABECEDAIRE<br />A Rouen</h3>
-            <p>
-              -Scraping <br />
-              -Portfolio<br />
-              -Déploiement portfolio <br />-API NodeJS<br />
-              -Maquette Figma
-            </p>
+            <h3>ABÉCÉDAIRE<br />Rouen</h3>
+            <p>- Scraping<br />- Portfolio<br />- Déploiement de portfolio<br />- API NodeJS<br />- Maquette Figma</p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2022-2023</div>
           <div class="timeline-content">
             <h3>
-              Baccalauréat STI2D<br />Au lycée la chataigneraie, Mesnil Esnard
+              Baccalauréat STI2D<br />Lycée La Châtaigneraie, Mesnil-Esnard
             </h3>
-            <p>
-              Lors de mon année de Terminale j'ai passé mon Bac STI2D OPTION
-              ITEC (Innovation Technologique et Éco-Conception)
-            </p>
+            <p>Option ITEC (Innovation Technologique et Éco-Conception)</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="stage" id="stage">
-      <h2 class="heading">Stage chez ABECEDAIRE</h2>
-      <p>
-        Durant ma 1ère année de BTS SIO, j'ai effectué un stage d'un mois chez
-        ABECEDAIRE, du 27 mai au 28 juin 2024, pour découvrir le métier de
-        développeur.
-        <br /><br />
-        ABECEDAIRE est né de la fusion entre un studio graphique et le studio
-        numérique Akarah. L'entreprise, dirigée par Gunther Bunel, a été fondée
-        en 2018 à Rouen. ABECEDAIRE se concentre sur deux domaines : le print,
-        avec la création de logos et la subligraphie, et le digital, spécialisé
-        dans les expériences tactiles pour bornes interactives. Un de leurs
-        partenariats majeurs est avec Toshiba, où ABECEDAIRE gère le software.
-        <br /><br />
-        Akarah a été fondé en 2017 par un groupe d'amis après un startup
-        weekend. Leur premier grand succès fut l'application Ary, qui permet de
-        découvrir Rouen de manière ludique. Ils ont ensuite remporté un projet
-        important pour l'Armada 2019. Cependant, des événements comme l'incendie
-        de Lubrizol et la pandémie de COVID-19 ont forcé Akarah à diversifier
-        ses activités, notamment vers la création de sites web et d'applications
-        mobiles. En 2021, ABECEDAIRE a racheté Akarah, après que leurs
-        fondateurs se soient rencontrés lors d'une conférence en Normandie.
-        <br /><br />
-        Durant mon stage de première année en BTS SIO, j'ai réalisé plusieurs
-        missions chez ABECEDAIRE, dont voici les principales. <br /><br />
-        Tout d'abord, j'ai travaillé sur un projet de web scraping avec la
-        librairie Puppeteer en JavaScript. J'ai scrappé des articles du site
-        Codeur.com, récupéré les IDs et résumés des articles, et les ai affichés
-        dans un tableau. Ce projet m'a permis de me familiariser avec JavaScript
-        et de comprendre le scraping web. <br /><br />
-        Ensuite, j'ai développé mon portfolio en HTML et CSS à partir d'une
-        maquette Figma. Ce projet m'a permis d'apprendre Flexbox pour la mise en
-        page flexible et de créer un portfolio responsive, adapté à tous les
-        types d'écrans. Le code est disponible sur mon GitHub. <br /><br />
-        Pour finaliser ce projet, j'ai effectué le déploiement du portfolio sur
-        Netlify, rendant le portfolio accessible en ligne et démontrant ma
-        capacité à créer des interfaces utilisateur adaptatives. <br /><br />
-        J'ai également appris à développer une API en NodeJS avec Express, où
-        j'ai compris les verbes HTTP, les erreurs courantes, et créé une API
-        REST. Ce projet m'a permis de maîtriser les fondamentaux pour créer des
-        applications web interactives et robustes. <br /><br />
-        Dans un autre projet, j'ai réalisé la traduction d'un site internet
-        d'anglais en français pour ABECEDAIRE, permettant aux utilisateurs
-        francophones d'accéder aux services sans barrière linguistique.
-        <br /><br />
-        Enfin, pour ma dernière tâche, j'ai choisi de concevoir une maquette
-        Figma pour un site de recettes de cuisine que je développerai
-        prochainement. Cela m'a permis de me plonger dans toutes les étapes du
-        développement web, du choix de la technologie à la création du design
-        final. <br /><br />
-      </p>
-      <div class="download-btn">
-        <a href="MMO_RapportDeStageMathieuFinal3.docx" class="btn"
-          >Télécharger le rapport de stage</a
-        >
+    <section class="RP" id="RP">
+      <h2 class="heading">Réalisations Professionnelles</h2>
+      <div class="excel-summary">
+        <p>B1.4 : Travailler en mode projet -> Planifier les activités<br />B1.5 : Mettre à disposition un service informatique -> Tests d’intégration et déploiement</p>
+        <div class="summary-block">
+          <h3>F1nfos (site réalisé en groupe)</h3>
+          
+        </div>
+        <p>B1.6 : Organiser son développement professionnel -> Gérer son identité professionnelle</p>
+        <div class="summary-block">
+          <h3>LinkedIn</h3>
+        
+        </div>
+        <p>B1.3 : Développer la présence en ligne -> Participer à l’évolution d’un site Web<br />B1.6 : Mettre en œuvre des outils et stratégies de veille</p>
+        <div class="summary-block">
+          <h3>Cybernews et veille personnelle</h3>
+          
+        </div>
+        <p>B1.1 : Gérer le patrimoine informatique -> Recenser les ressources numériques<br />B1.2 : Répondre aux incidents -> Collecter et orienter les demandes</p>
+        <div class="summary-block">
+          <h3>Travail de groupe GSK</h3>
+      
+        </div>
+        <p>B1.1 : Gérer le patrimoine informatique -> Exploiter des référentiels et normes<br />B1.6 : Organiser son développement professionnel</p>
+        <div class="summary-block">
+          <h3>Portfolio</h3>
+        </div>
+        <p>B1.1 : Gérer le patrimoine informatique -> Exploiter des référentiels et normes<br /> B1.3 : Développer la présence en ligne de l’organisation->Participer à l’évolution d’un site Web exploitant les données de l’organisation <br /> B1.4 : Travailler en mode projet ->Planifier les activités<br /> B1.5 : Mettre à disposition des utilisateurs un service informatique->Déployer un service, Réaliser les tests d’intégration et d’acceptation d’un service<br />B1.6 : Organiser son développement professionnel</p>
+        <div class="summary-block">
+          <h3>Stage</h3>
+        </div>
       </div>
-      <div class="attestations">
-        <h3>Attestations</h3>
-        <div class="attestation-block">
-          <h4>Attestation 1ère année</h4>
-          <a href="AttestationDeStageABECEDAIRE.pdf"
-            >Télécharger l'attestation</a
-          >
-        </div>
-        <div class="attestation-block">
-          <h4>Attestation 2ème année</h4>
-          <a href="AttestationDeStageDeuxiemeAnnee.pdf"
-            >Télécharger l'attestation</a
-          >
-        </div>
+    </section>
+
+    <section class="stage" id="stage">
+      <h2 class="heading">Stage chez ABÉCÉDAIRE</h2>
+      <div class="download-btn">
+        <a href="MMO_RapportDeStageMathieuFinal3.docx" class="btn">Télécharger le rapport de stage</a>
       </div>
     </section>
     <section class="news" id="news">
@@ -340,109 +294,42 @@
       <h2 class="heading">
         Rectorat <br />
         E4
-      </h2>
-      <div class="excel-summary">
-        <p>
-          B1.4 : Travailler en mode projet ->Planifier les activités <br />
-          B1.5 :Mettre à disposition des utilisateurs un service informatique->
-          Réaliser les tests d’intégration et d’acceptation d’un service
-          Déployer un service
-        </p>
-        <!-- Bloc 1 -->
-        <div class="summary-block">
-          <h3>F1nfos qui est un site réaliser en AP (en groupe) :</h3>
-        </div>
-        <!-- Bloc 2 -->
-        <p>
-          B1.6 : Organiser son développement professionnel -> Gérer son identité
-          professionnelle
-        </p>
-        <div class="summary-block">
-          <h3>Linkedin</h3>
-        </div>
-        <!-- Bloc 3 -->
-        <p>
-          B1.3 : Développer la présence en ligne de l’organisation -> Participer
-          à l’évolution d’un site Web exploitant les données de l’organisation
-          <br />B1.6: Organiser son développement professionnel-> Mettre en
-          œuvre des outils et stratégies de veille informationnelle, Mettre en
-          place son environnement d’apprentissage personnel
-        </p>
-        <div class="summary-block">
-          <h3>Cybernews et veille perso</h3>
-        </div>
-        <p>
-          B1.1:Gérer le patrimoine informatique ->Recenser et identifier les
-          ressources numériques​ <br />
-          B1.2 : Répondre aux incidents et aux demandes d’assistance et
-          d’évolution -> Collecter, suivre et orienter des demandes
-          <br />B1.4:Travailler en mode projet ->Planifier les activités<br />
-          B1.5:Mettre à disposition des utilisateurs un service informatique ->
-          Collecter, suivre et orienter des demandes
-        </p>
-        <div class="summary-block">
-          <h3>AP Travail de groupe GSK</h3>
-        </div>
-        <p>
-          Compétences : B1.1 : Développer la présence en ligne de
-          l’organisation->Exploiter des référentiels, normes et standards
-          adoptés par le prestataire informatique <br />
-          B1.6 : Organiser son développement professionnel->Mettre en place son
-          environnement d’apprentissage personnel, Mettre en œuvre des outils et
-          stratégies de veille informationnelle, Gérer son identité
-          professionnelle, Développer son projet professionne
-        </p>
-        <div class="summary-block">
-          <h3>Portfolio</h3>
-        </div>
-        <p>
-          B1.1:Gérer le patrimoine informatique->Exploiter des référentiels,
-          normes et standards adoptés par le prestataire informatique, Mettre en
-          place et vérifier les niveaux d’habilitation associés à un service
-        </p>
-        <div class="summary-block">
-          <h3>Règle de nommage en C# et SQL ainsi que le LCD</h3>
-        </div>
-        <h2 class="heading">Réalisation professionnelle</h2>
-        <div class="excel-summary">
-          <!-- Bloc 1 -->
-          <p>B1.1: Gérer le patrimoine informatique -> Exploiter des référentiels, normes et standards adoptés par le prestataire informatique
-            <br /> B1.3:Développer la présence en ligne de l’organisation ->Participer à l’évolution d’un site Web exploitant les données de l’organisation. <br />B.4: Travailler en mode projet ->Planifier les activités <br />B1.5:Mettre à disposition des utilisateurs un service informatique ->Déployer un service <br />B1.6: Organiser son développement professionnel->Mettre en place son environnement d’apprentissage personnel </p> 
-          </p>
-          <div class="summary-block">
-            <h3>STAGE</h3>
+        <div class="attestations">
+          <h3>Attestations</h3>
+          <div class="attestation-block">
+            <h4>Attestation 1ère année</h4>
+            <a href="AttestationDeStageABECEDAIRE.pdf"
+              >Télécharger l'attestation</a
+            >
           </div>
-         
-      <!-- Ajoute le lien pour télécharger le fichier Excel -->
-      <a href="2MMO_E4_BTS_1SIO_2024.xlsx" class="btn"
-        >Télécharger le tableau Excel</a
-      >
-      <!-- Remplace # par le lien du fichier Excel -->
-      <a href="Descitpion différent projet.docx" class="btn"
-        >Télécharger les Réalisation professionnelle</a
-      >
-      <a href="Preuve.docx" class="btn">Télécharger les Preuves</a>
-    </section>
+          <div class="attestation-block">
+            <h4>Attestation 2ème année</h4>
+            <a href="AttestationDeStageDeuxiemeAnnee.pdf"
+              >Télécharger l'attestation</a
+            >
+          </div>
+        </div>
+        <section class="rp-detail" id="rp-detail">
+          <h2 class="heading">Certification</h2>
+          <h2>
+            ANSSI (Agence Nationale de la Sécurité des Systèmes d’Information) :
+          </h2>
+          <a href="CertificationSecNum.pdf" class="btn"
+            >Télécharger la Certification</a
+          >
+          <h2>RGPD (Règlement Général sur la Protection des Données) :</h2>
+          <a href="certification RGPD.pdf" class="btn"
+            >Télécharger la Certification</a
+          >
+          <h2>Licence PIX :</h2>
+          <a href="Pix.pdf" class="btn">Télécharger la Certification</a>
+        </section>
+      </h2>
+     
 
     <section class="e5" id="e5">
       <h2 class="heading">E5</h2>
       <p>A venir : 2 FDRP des projets</p>
-    </section>
-
-    <section class="rp-detail" id="rp-detail">
-      <h2 class="heading">Certification</h2>
-      <h2>
-        ANSSI (Agence Nationale de la Sécurité des Systèmes d’Information) :
-      </h2>
-      <a href="CertificationSecNum.pdf" class="btn"
-        >Télécharger la Certification</a
-      >
-      <h2>RGPD (Règlement Général sur la Protection des Données) :</h2>
-      <a href="certification RGPD.pdf" class="btn"
-        >Télécharger la Certification</a
-      >
-      <h2>Licence PIX :</h2>
-      <a href="Pix.pdf" class="btn">Télécharger la Certification</a>
     </section>
 
     <section class="contact" id="contact">

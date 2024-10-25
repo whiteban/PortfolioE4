@@ -1,4 +1,4 @@
-const textArray = ["Le Football", "La voile", "Le judo"];
+const textArray = ["le Football", "la voile", "le judo"];
 let textIndex = 0;
 let charIndex = 0;
 const typingDelay = 100;
